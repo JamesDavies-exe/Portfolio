@@ -22,7 +22,15 @@
 body::-webkit-scrollbar {
   display: none;
 }
+.light {
+  --main-bg-color: #eee;
+  --main-tx-color: #000;
+}
 
+.dark {
+  --main-bg-color: #222;
+  --main-tx-color: #eee;
+}
 body {
   background-image: url(/img/bgR.jpg);
   background-size: cover;
@@ -31,7 +39,7 @@ body {
 }
 
 main {
-  background-color: white;
+  background-color: var(--main-bg-color);
 }
 
 .header {
@@ -187,7 +195,7 @@ main {
   align-content: center;
   text-transform: uppercase;
   font-family: 'OpenSans-Bold';
-  color: rgb(0, 0, 0);
+  color: var(--main-tx-color);
 }
 
 .flex-items:nth-child(1) {
@@ -296,7 +304,7 @@ main {
 /* GALLERY GALLERY */
 
 .gallery-wrapper {
-  background-color: #dbdbdb;
+  background-color: var(--main-bg-color);
   box-sizing: border-box;
   height: 195px;
   overflow: hidden;
@@ -311,7 +319,7 @@ main {
 }
 
 .gallery {
-  background-color: #dbdbdb;
+  background-color: var(--main-bg-color);
   display: flex;
   box-sizing: border-box;
   width: max-content;
@@ -339,7 +347,6 @@ main {
 
 .contact::after {
   content: "";
-  background-color: #000000;
   top: 0;
   left: 0;
   right: 0;
@@ -349,7 +356,7 @@ main {
 }
 
 footer {
-  background-color: white;
+  background-color: var(--main-bg-color);
   width: 100%;
   height: 10vh;
 }
@@ -440,7 +447,7 @@ footer {
   margin: 5%;
   margin-bottom: 3%;
   display: flex;
-  color: white;
+  color: var(--main-tx-color);
   font-family: 'OpenSans-Regular';
 
 }
@@ -605,7 +612,7 @@ footer {
 
 .social-footer {
   padding: 1rem;
-  background: #ffffff;
+  background: var(--main-bg-color);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +626,7 @@ footer {
 
 .social-footer .social-footer-icons .fa {
   font-size: 1.3rem;
-  color: #000000;
+  color: var(--main-tx-color);
 }
 
 .social-footer .social-footer-icons .fa:hover {
