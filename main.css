@@ -556,6 +556,17 @@ footer {
   margin: 0 5px;
 }
 
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logoFooter {
+  width: 30%;
+  height: auto;
+}
+
+
 @media screen and (max-width: 620px) {
   .screen-body {
     flex-direction: column;
@@ -574,6 +585,10 @@ footer {
   }
 
   .app-title:after {
+    display: none;
+  }
+
+  .menu-bar{
     display: none;
   }
 }
