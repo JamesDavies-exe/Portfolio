@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio de James Davies Brown, en el que 
+    se muestra una descripción, el curriculum y sus proyectos mas recientes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main.css">
     <script src="https://kit.fontawesome.com/031487de85.js" crossorigin="anonymous"></script>
@@ -10,19 +12,16 @@
     <title>James' Portfolio</title>
 </head>
 <body data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-in-sine">
-    <header class="header" id="top">
-      <ul class="menu-bar" id="navbar">
+    <nav id="navbar" class="navbar">
+      <ul class="container">  
         <li onclick="location.href='#top';">Home</li>
         <li onclick="location.href='#about';">About</li>
         <li onclick="location.href='#cv';">Curriculum</li>
         <li onclick="location.href='#projects';">Projects</li>
         <li onclick="location.href='#contact';">Contact</li>
       </ul>
-      <div>
-    </div>
-        <div class="title">
-          <img class="logo" src="/img/logo.png" alt="">
-        </div>
+  </nav>
+    <header class="header" id="top">
       </header>
       <main id="main" class="light">
         <div class="flex-container">
@@ -35,7 +34,7 @@
                 <div class="container">
                     <div class="datos"> DATOS ACADEMICOS </div>
                     <div class="datosTxt">
-                        <ul>
+                        <ul class="curric">
                             <li>Grado Superior de Desarrollo de Aplicaciones Web (Es Liceu, 2021 - 2024)</li>
                             <li>Grado Medio de Sistemas Microinformaticos y Redes (Es Liceu, 2019 - 2021)</li>
                             <li>Educación Secundaría Obligatioria (Es Liceu, 2015 - 2019)</li>
@@ -56,26 +55,26 @@
 
             <div class="flex-gallery">
               <div class="gallery-item">
-                <a target="_blank" href="https://www.hempdemallorca.com">
-                  <img class="thumbnail" src="/img/hemp.png" width="400" height="200">
+                <a target="_blank" href="https://www.hempdemallorca.com" aria-label="hemp">
+                  <img class="thumbnail" src="/img/hemp.png" alt="HEMP" width="400" height="200">
                 </a>
                 <div class="desc">Cultivo de cannabis en Mallorca</div>
               </div>
               <div class="gallery-item">
-                <a target="_blank" href="https://www.buscaminas2.netlify.com">
-                  <img class="thumbnail" class="thumbnail" src="/img/buscaminas.png" width="400" height="200">
+                <a target="_blank" href="https://www.buscaminas2.netlify.com" aria-label="buscaminas">
+                  <img class="thumbnail" class="thumbnail" src="/img/buscaminas.png" alt="BUSCAMINAS" width="400" height="200">
                 </a>
                 <div class="desc">Juega al buscaminas</div>
               </div>
               <div class="gallery-item">
-                <a target="_blank" href="https://www.colibry.netlify.com">
-                  <img class="thumbnail" src="/img/colibry.png" width="400" height="200">
+                <a target="_blank" href="https://www.colibry.netlify.com" aria-label="colibry">
+                  <img class="thumbnail" src="/img/colibry.png" alt="COLIBRY" width="400" height="200">
                 </a>
                 <div class="desc">Pagina web de una cafeteria en Sevilla</div>
               </div>
               <div class="gallery-item">
-                <a target="_blank" href="https://www.jamcrew.netlify.com">
-                  <img class="thumbnail" src="/img/jamcrew.png" width="400" height="200">
+                <a target="_blank" href="https://www.jamcrew.netlify.com" aria-label="jamcrew">
+                  <img class="thumbnail" src="/img/jamcrew.png" alt="JAMCREW" width="400" height="200">
                 </a>
                 <div class="desc">Proyecto de Empresariales</div>
               </div>
@@ -118,13 +117,13 @@
 
         <footer class="social-footer">
           <div class="social-footer-left">
-            <a href="#"><img class="logoFooter" src="/img/logo.png"></a>
+            <a href="#"><img class="logoFooter" src="/img/logo.png" alt="LOGO"></a>
           </div>
           <div class="social-footer-icons">
             <ul class="menu simple">
-              <li><a href="https://www.facebook.com/james.aguilarfernandez"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.instagram.com/james_aguilarf/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/Black_Crash_DVS"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/james.aguilarfernandez" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/james_aguilarf/" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/Black_Crash_DVS" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             </ul>
           </div>
       </footer>

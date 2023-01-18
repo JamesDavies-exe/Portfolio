@@ -7,13 +7,11 @@ new simpleParallax(image, {
 	orientation: 'right'
 });
 
+$(function () {
+	$(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+  });
+  
 
-	var hour = (new Date).getHours();
-  
-	if (hour >= 19) {
-		document.getElementById('main').removeClass('light').addClass('dark');
-	} else {
-		document.getElementById('main').removeClass('dark').addClass('light');
-	}
-	console.log(hour);
-  
