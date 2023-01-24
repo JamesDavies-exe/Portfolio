@@ -7,12 +7,10 @@ new simpleParallax(image, {
 	orientation: 'right'
 });
 
-$(function () {
-	$(document).scroll(function () {
-	  var $nav = $(".navbar-fixed-top");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
-  });
+function darkMode() {
+	var element = document.getElementById("main");
+	element.classList.toggle("dark");
+  }
 
   function myFunction() {
 	var x = document.getElementById("myTopnav");
