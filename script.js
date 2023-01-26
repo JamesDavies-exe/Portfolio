@@ -20,4 +20,3 @@ function darkMode() {
 	  x.className = "topnav";
 	}
   }
-
