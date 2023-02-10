@@ -3,20 +3,6 @@
   scroll-behavior: smooth;
 }
 
-@font-face {
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
-  font-family: 'OpenSans-Regular';
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
-  font-family: 'OpenSans-Bold';
-  font-weight: 700;
-  font-style: normal;
-}
-
 .light {
   --main-bg-color: rgb(255, 255, 255);
   --main-tx-color: #000;
@@ -27,7 +13,7 @@
   --main-tx-color: rgb(255, 255, 255);
 }
 body {
-  background-image: url(/img/bgR.jpg);
+  background-image: url(/img/bgR.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -284,46 +270,6 @@ main {
 .workTxt {
   grid-area: workTxt;
   margin-top: 5%;
-}
-
-
-/* GALLERY GALLERY */
-
-.gallery-wrapper {
-  background-color: var(--main-bg-color);
-  box-sizing: border-box;
-  height: 195px;
-  overflow: hidden;
-  align-items: center;
-}
-
-.gallery-scroll {
-  box-sizing: border-box;
-  height: 195px;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.gallery {
-  background-color: var(--main-bg-color);
-  display: flex;
-  box-sizing: border-box;
-  width: max-content;
-  height: 180px;
-  padding: 0px 8px;
-  align-items: center;
-  justify-content: center;
-}
-
-.item {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 16px 8px;
-}
-
-.item img {
-  display: block;
-  height: 100%;
 }
 
 .contact {
